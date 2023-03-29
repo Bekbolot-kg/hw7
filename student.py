@@ -74,7 +74,7 @@ for i in c.fetchall():
 
 c.execute('DELETE FROM student WHERE rowid % 2 = 0')
 print()
-print('Студентов у которых нечетное id')
+print('Студентов у которых нечетное id: ')
 c.execute('SELECT rowid, * FROM student')
 for i in c.fetchall():
     print(i)
